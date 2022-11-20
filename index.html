@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+        :root {
+            --mojo: #CA4849;
+            --black: #1E1D26;
+            --oslo-gray: #919596;
+            --mountain-misk: #8E8C94;
+        }
+
+        body {
+            background: rgb(255, 0, 0);
+            overflow: hidden;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat';
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .navigation, .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navigation {
+            padding: 20px 100px;
+            /* border: 1px solid red; */
+        }
+
+        .navigation .menu .first-element {
+            background: red;
+            color: #fff;
+        }
+
+        .navigation .menu a {
+            padding: 8px 20px;
+            margin-left: 10px;
+            color: red;
+        }
+
+        .main {
+            display: flex;
+            padding: 20px 100px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main img {
+            width: 400px;
+            color: red;
+        }
+
+        .main .right h1 span {
+            color: red;
+        }
+
+        .main .right h1, p {
+            margin-bottom: 50px;
+        }
+
+        .main .right a {
+           background: red; 
+           color: white;
+           padding: 10px 20px;
+           transition: .5s;
+           box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .main .right a:hover {
+            opacity: .6;
+        }
+
+        .shape1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: white;
+            width: calc(100% + 250px);
+            height: 110vh;
+            clip-path: polygon(0 0, 73% 0, 100% 49%, 21% 100%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+
+        <div class="logo">
+            <img src="Coca-Cola_logo.svg" alt="logo" width="100">
+        </div>
+
+        <div class="menu">
+            <a href="#" class="first-element">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Shop Coke</a>
+            <a href="#">Community</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <img src="Coca-Cola-No-Background.png" alt="">
+        <div class="right">
+
+            <h1>ALWAYS <span>BEST SERVED CHILLED</span></h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum omnis quia similique delectus quam ab accusantium eos provident. Nostrum modi quo minima possimus suscipit architecto asperiores corporis illum odit sit?</p>
+
+            <a href="#" class="button">View Products</a>
+        </div>
+    </div>
+
+    <div class="shape"></div>
+    <div class="shape1"></div>
+</body>
+</html>
